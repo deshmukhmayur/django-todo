@@ -1,11 +1,13 @@
-## Introduction
+# Django Todo
+-------------
+# Introduction
 
 Todo is a simple Django app for a basic todo list created in Django and AngularJS.
 
 It provides basic task list features like adding a new task, checking it off, and removing/deleting the task.
 
 
-## Contents
+# Contents
 
 1. [Introduction][intro]
 2. [Usage][usage]
@@ -19,13 +21,13 @@ It provides basic task list features like adding a new task, checking it off, an
 7. [License][lic]
 
 
-## Usage
+# Usage
 
 The web app provides a simple easy to use interface for a todo list. New items can be added using the input textbox at the top, and the completed items can be checked off using the checkbox to the left of each item in the list.
 To delete an item from the list, just hover over the item, and click on the (x) to the right of the item.
 
 
-## Installation
+# Installation
 
 ## Requirements
 
@@ -125,14 +127,14 @@ $ django-admin runserver
 You can view the todo via the link `http://127.0.0.1:8000/todo/`
 
 
-## Technologies Used
+# Technologies Used
 
 - **Backend**: Python Django Framework 1.10.4
 - **Frontend**: AngularJS 1.6
 - **Database**: PostgreSQL or SQLite (Other Database engines, like MySQL, MongoDB, etc. can also be used)
 
 
-## Contributing
+# Contributing
 
 This project is not, by any means, complete. This app was meant as a basic follow up tutorial for AngularJS and Django. I just wanted to see how it works out. One can find possibly many flaws in it. Or even missing features.
 If you like this project and would like to contribute to it, you can do so by following a few basic steps:
@@ -149,7 +151,7 @@ If you like this project and would like to contribute to it, you can do so by fo
 I promise I will consider all the valid Pull Requests.
 
 
-## Contact
+# Contact
 
 For any queries or , you can contact me via:
 
@@ -159,7 +161,7 @@ For any queries or , you can contact me via:
 - LinkedIn: [in/DeshmukhMayur204][in]
 
 
-## License
+# License
 
 This project is licensed under the terms of the [MIT][lic] license.
 
