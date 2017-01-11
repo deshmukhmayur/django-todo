@@ -3,12 +3,21 @@
 ## Introduction
 
 Todo is a simple Django app for a basic todo list.
-It provides basic task adding, marking, and removing functionality.
+It provides basic task list features like adding a new task, checking it off, and removing/deleting the task.
+
 
 ## Usage
 
 The web app provides a simple easy to use interface for a todo list. New items can be added using the input textbox at the top, and the completed items can be checked off using the checkbox to the left of each item in the list.
 To delete an item from the list, just hover over the item, and click on the (x) to the right of the item.
+
+
+## Technologies used:
+
+- **Backend**: Python Django Framework 1.10.4
+- **Frontend**: AngularJS 1.6
+- **Database**: PostgreSQL or SQLite (Other Database engines, like MySQL, MongoDB, etc. can also be used)
+
 
 ## Contributing
 
@@ -25,6 +34,7 @@ If you like this project and would like to contribute to it, you can do so by fo
 8. Respond to any code review/comments feedback
 
 I promise I will consider all the valid Pull Requests.
+
 
 ## Installation
 
@@ -47,20 +57,104 @@ To install Python, go to https://www.python.org/downloads/ to download the lates
 
 ##### Step 2.
 
-After you are set up with Python, you need to make sure you have pip
+After you are set up with Python, you need to make sure you have pip installed.
+
+Open your command window, and enter `pip -V`
+
+It should display the version of pip that is installed on your system. If it shows an error, then that means that pip is not installed on your system.
+
+To install pip checkout the documentation at [Python Packaging User Guide Documentation][PPUGD].
+
+##### Step 3.
+
+Now you need to install Django Framework. This is what provides the backend for the todo app.
+
+To install Django, open your command window, and enter `pip install django==1.10.4` to install the version used for this app.
+But you can also install the latest version by just `pip install django`. Although, I cannot guarantee whether the latest version will support the web app.
 
 ### Configuration
 
-After having installed the software, the user may need to configure it. List configuration options and explain how and where to set them.
+##### Step 1.
 
-## Credits
+After installing Django, you just have to create a new project, using `django-admin startproject projectname`
 
-Sometimes also called Authors, this is the list of project contributors.
+This will create a new directory called 'projectname' in the current working directory.
+
+##### Step 2.
+
+Now copy the 'todo' directory from the git project and paste it inside the 'projectname' directory.
+
+##### Step 3.
+
+Now let's create a route so that the app can be visited through a web browser.
+
+Add the following line inside the URL_PATTERNS list in 'projectname/urls.py' file
+
+```python
+urlpatterns = [
+    url(r'^todo/', include('todo.urls')),
+    # other routes...
+]
+```
+
+This ensures that the web app can be visited via 'baseurl/todo/'.
+
+##### Step 4.
+
+Now to register the app with the Django project, open the 'settings.py' file from the 'projectname' directory, and add 'todo' inside the INSTALLED_APPS list as such:
+
+```python
+# Application definition
+
+INSTALLED_APPS = [
+    'todo.apps.TodoConfig',
+    # ...
+    'django.contrib.admin',
+    # other apps
+]
+```
+
+##### Step 5.
+
+After we have registered Django project, we need to migrate the database. This will create the necessary tables in the database.
+
+```shell
+$ django-admin makemigrations
+$ django-admin migrate
+```
+
+##### Step 6.
+
+The app is finally ready to roll!!
+
+Just enter the following command in the command line to start the server.
+
+```shell
+$ django-admin runserver
+```
+
+You can view the todo via the link `http://127.0.0.1:8000/todo/`
+
 
 ## Contact
 
-People may want to reach out to you for various reasons, ranging from DCMA take down notices to questions about how to donate to your project. Provide contact information, such as an email address, and keep in mind that some countries may require certain information by law, such as a full postal address, website URL, and company name.
+For any queries or , you can contact me via:
+
+- Facebook: [fb/MayurDeshmukh204][fb]
+- Twitter: [t/deshmukhmayur24][t]
+- G+: [g+/+MayurDeshmukh204][g+]
+- LinkedIn: [in/DeshmukhMayur204][in]
+
 
 ## License
 
-This project is licensed under [insert license]. The license should be in a separate file called LICENSE, so don't explain it in detail within your documentation. Also, don't forget to specify licenses of third-party libraries and programs you use.
+This project is licensed under the terms of the [MIT][license] license.
+
+
+
+[PPUGD]: https://packaging.python.org/installing/#install-pip-setuptools-and-wheel
+[fb]: https://facebook.com/MayurDeshmukh204
+[t]: https://twitter.com/deshmukhmayur24
+[g+]: https://plus.google.com/+MayurDeshmukh204
+[in]: https://in.linkedin.com/in/deshmukhmayur204
+[license]: https://github.com/deshmukhmayur/django-todo/blob/master/LICENSE
