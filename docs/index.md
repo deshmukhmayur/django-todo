@@ -1,5 +1,3 @@
-# Django Todo
--------------
 # Introduction
 
 Todo is a simple Django app for a basic todo list created in Django and AngularJS.
