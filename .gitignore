@@ -1,2 +1,4 @@
 dist/
 django_todo.egg-info/
+setup.py
+manifest.in
