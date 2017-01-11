@@ -1,6 +1,6 @@
-=====
-Polls
-=====
+====
+Todo
+====
 
 Todo is a simple Django app for a basic todo list.
 It provides basic task adding, marking, and removing functionality.
