@@ -141,8 +141,8 @@ You can view the todo via the link `http://127.0.0.1:8000/todo/`
 For any queries or , you can contact me via:
 
 - Facebook: [fb/MayurDeshmukh204][fb]
-- Twitter: [t/deshmukhmayur24][t]
-- G+: [g+/+MayurDeshmukh204][g+]
+- Twitter: [@deshmukhmayur24][t]
+- G+: [+MayurDeshmukh204][g+]
 - LinkedIn: [in/DeshmukhMayur204][in]
 
 
