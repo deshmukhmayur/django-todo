@@ -117,7 +117,7 @@ You can view the todo via the link `http://127.0.0.1:8000/todo/`
 ## Technologies used:
 
 - **Backend**: Python Django Framework 1.10.4
-- **Frontend**: AngularJS 1.6
+- **Frontend**: AngularJS 1.6.1, Bootstrap 3.3.7
 - **Database**: PostgreSQL or SQLite (Other Database engines, like MySQL, MongoDB, etc. can also be used)
 
 
