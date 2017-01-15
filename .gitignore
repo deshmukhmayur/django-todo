@@ -3,3 +3,5 @@ django_todo.egg-info/
 setup.py
 MANIFEST.in
 README.rst
+todo/__pycache__/
+todo/migrations/__pycache__/
