@@ -1,7 +1,7 @@
 import os
 from setuptools import find_packages, setup
 
-with open(os.path.join(os.path.dirname(__file__), 'README')) as readme:
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
 
 # allow setup.py to be run from any path
@@ -9,11 +9,11 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-todo',
-    version='0.1',
+    version='0.1a0',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
-    description='A simple Django app for a todo list.',
+    description='A simple Django Todo list web app.',
     long_description=README,
     url='deshmukhmayur.pythonanywhere.com/todo/',
     author='Mayur Deshmukh',
@@ -21,7 +21,7 @@ setup(
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.10.4',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
