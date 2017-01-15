@@ -1,5 +1,5 @@
 dist/
 django_todo.egg-info/
 setup.py
-manifest.in
+MANIFEST.in
 README.rst
